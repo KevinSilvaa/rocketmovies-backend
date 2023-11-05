@@ -1,0 +1,15 @@
+{
+  "name": "rocketmovies",
+  "version": "1.0.0",
+  "description": "API desenvolvida para o Front-end da aplicação RocketMovies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Kevin Silvaa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

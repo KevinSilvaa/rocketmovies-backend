@@ -5,7 +5,7 @@ const ensureAuthenticated = require("../middlewares/ensureAuthenticated");
 
 const notesRoutes = Router();
 
-const notesController = new NotesController;
+const notesController = new NotesController();
 
 notesRoutes.use(ensureAuthenticated);
 

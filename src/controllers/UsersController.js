@@ -3,7 +3,7 @@ const AppError = require("../utils/AppError");
 const sqliteConnection = require("../database/sqlite");
 
 class UsersController {
-    
+
     // *Criar um novo registro de usuário dentro do banco de dados
     async create(request, response) {
         const { name, email, password } = request.body;
@@ -28,7 +28,7 @@ class UsersController {
 
         const database = await sqliteConnection();
         const user = await database.get("SELECT * FROM users WHERE id = (?)", [user_id]);
-        
+
         // *Name and email
         if (!user) {
             throw new AppError("Usuário não encontrado");
@@ -41,7 +41,7 @@ class UsersController {
         }
 
         user.name = name ?? user.name;
-        user.email= email ?? user.email;
+        user.email = email ?? user.email;
 
         // *Password
         if (password && old_password) {
@@ -68,7 +68,7 @@ class UsersController {
             WHERE id = ?`,
             [user.name, user.email, user.password, user_id]);
 
-            return response.json();
+        return response.json();
     }
 }
 

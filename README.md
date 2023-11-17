@@ -10,7 +10,7 @@ O projeto Rocket Movies foi desenvolvido durante o programa Explorer da Rocketse
 
 ## 🔨 Objetivos do projeto
 
-O Back-end desta aplicação é feita com Node.js, sendo utilizado SQLite como banco de dados, Express, que é uma lib do Node.js e algumas outras depêndencias para uma melhor performance.<br>
+O Back-end desta aplicação é feito com Node.js, sendo utilizado SQLite como banco de dados, Express, que é uma lib do Node.js e algumas outras depêndencias para uma melhor performance.<br>
 Para criptografar as senhas para mandá-las para o banco de dados é utilizado BCrypt, para criação de tabelas no banco de dados de forma automática é utilizado Knex e para integração com o Front-end é utilizado Cors.
 
 ## Tecnologias utilizadas:
